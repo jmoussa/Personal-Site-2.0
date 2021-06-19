@@ -164,7 +164,7 @@ body {
 @for $i from 1 through 30 {
 	@keyframes particle-animation-#{$i} {
 		100% {
-			transform: translate3d((random(90) * 1vw), (random(90) * 2vh), (random(100) * 1px));
+			transform: translate3d((random(90) * 1vw), (random(90) * 1vh), (random(100) * 1px));
 		}
 	}
 	
@@ -175,7 +175,7 @@ body {
 		height: $size;
 		width: $size;
 		animation-delay: -$i * .2s;
-		transform: translate3d((random(90) * 1vw), (random(90) * 2vh), (random(100) * 2px));
+		transform: translate3d((random(90) * 1vw), (random(90) * 1vh), (random(100) * 2px));
 		background: #42b983;
 
 	}
