@@ -104,8 +104,10 @@ h3 {
   }
 
   #blurb, #brief {
+    z-index: 50; 
     margin: auto;
     padding: 0.5rem;
+    background-color: #F8F4F9;
   }
 
   #grid-container-resize {
@@ -167,7 +169,7 @@ body {
 .particle {
 	position: absolute;
   border-radius: 50%;
-  z-index: -1;
+  z-index: 1;
 }
 
 @for $i from 1 through 30 {
