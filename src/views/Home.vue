@@ -301,6 +301,7 @@ ul {
 
 }
 .header { 
+  z-index: 10; 
   h1 {
     text-shadow: 0px 15px 5px rgba(0,0,0,0.1),
                  10px 20px 5px rgba(0,0,0,0.05),
