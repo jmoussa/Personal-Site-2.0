@@ -316,6 +316,7 @@ ul {
   overflow: auto;
 }
 .personal-info {
+  z-index: 10; 
   font-size: 120%;
   margin: 5vh 15vw; 
   padding: 5rem;
