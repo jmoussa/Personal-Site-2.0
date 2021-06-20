@@ -6,7 +6,7 @@
     <div class="grid-container" id="grid-container-resize">
       <div v-for="(item, index) in github_projects" :key="index" class="grid-item">
         <div class="card-header"><h3>{{ item.name.replaceAll('-', ' ')[0].toUpperCase() + item.name.replaceAll('-', ' ').slice(1) }}</h3></div>
-        <div class="card-body"><p>{{item.description}}</p></div>
+        <div class="card-body" id="card-body"><p>{{item.description}}</p></div>
         <div class="card-link-group">
           <button>
             <a :href="item.svn_url">Github</a>

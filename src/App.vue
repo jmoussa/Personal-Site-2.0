@@ -98,6 +98,15 @@ h3 {
       flex-direction: column;
     }
   }
+  
+  #card-body {
+    padding: 1rem; 
+  }
+
+  #blurb, #brief {
+    margin: auto;
+    padding: 0.5rem;
+  }
 
   #grid-container-resize {
       grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));

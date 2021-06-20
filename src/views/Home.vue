@@ -5,7 +5,7 @@
       <h2>Software Engineer.</h2>
     </div>
     <div class="generic-container">
-      <div class="blurb">
+      <div class="personal-info" id="blurb">
         <p>
           I'm an NYC-based software engineer who specializes in building complex backend frameworks and robust data pipelines.
           <br> 
@@ -20,7 +20,7 @@
       <div class="header">
         <h2>How I Got Started</h2>
       </div>
-      <div class="brief">
+      <div class="personal-info" id="brief">
         <p>
           I got into softare relatively late, around my second year of college. Before that I was studying with the intention of going to dental school.
           However after sitting down and realizing that was not what I wanted, 
@@ -315,23 +315,13 @@ ul {
   font-size: 150%;
   overflow: auto;
 }
-.brief {
+.personal-info {
   font-size: 120%;
   margin: 5vh 15vw; 
   padding: 5rem;
-  border: 2px solid #42b983;
   border-radius: 1rem;
   background-color: #F8F4F9;
-}
-.blurb {
-  font-size: 130%;
-  margin: 5vh 20vw; 
-  padding: 5rem;
-  margin-bottom: 15rem; 
   border: 2px solid #42b983;
-  border-radius: 1rem;
-  background-color: #F8F4F9;
-
 }
 .white {
   color: white;
