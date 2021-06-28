@@ -104,7 +104,7 @@ h3 {
   }
 
   #blurb, #brief {
-    z-index: 50; 
+    z-index: 20; 
     margin: auto;
     padding: 0.5rem;
     background-color: #F8F4F9;
@@ -146,7 +146,7 @@ body {
 }
 
 #nav {
-  z-index: 10;
+  z-index: 20;
   padding: 2vw;
   position: -webkit-sticky; /* Safari */
   position: sticky;
@@ -169,7 +169,7 @@ body {
 .particle {
 	position: absolute;
   border-radius: 50%;
-  z-index: 1;
+  z-index: -1;
 }
 
 @for $i from 1 through 30 {

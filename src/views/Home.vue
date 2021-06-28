@@ -225,11 +225,11 @@ export default {
 
 <style scoped lang="scss">
 .static-accessory-section {
-  z-index: 2;
+  z-index: 20;
   /*position: relative;*/
 }
 .accessory-section {
-  z-index: 5;
+  z-index: 30;
   position: fixed;
   bottom: 0;
   color: white;
@@ -301,7 +301,7 @@ ul {
 
 }
 .header { 
-  z-index: 10; 
+  z-index: 20; 
   h1 {
     text-shadow: 0px 15px 5px rgba(0,0,0,0.1),
                  10px 20px 5px rgba(0,0,0,0.05),
@@ -317,7 +317,7 @@ ul {
   overflow: auto;
 }
 .personal-info {
-  z-index: 10; 
+  z-index: 20; 
   font-size: 120%;
   margin: 5vh 15vw; 
   padding: 5rem;
