@@ -23,12 +23,13 @@
       <div class="personal-info" id="brief">
         <p>
           I got into softare relatively late, around my second year of college. Before that I was studying with the intention of going to dental school.
-          However after sitting down and realizing that was not what I wanted, 
-          and exploring other career options that matched what I found interesting and that fit my desired lifestyle I arrived at sofware.
+          However, after sitting down and realizing that was not what I wanted, exploring other career options that matched what I found interesting, 
+          and that fit my desired lifestyle, I arrived at sofware development.
         </p>
         <p>
-          I had brief exposure to HTML/CSS and even a little bit of Python via Codeacadamy and Tumblr, so I had somewhat of a technical footing, a majority of my schoolwork was more focused on problem-solving and understanding the concepts and nuances of software in general. 
-          After graduating I didn't waste any time diving into the industry and accrued a wide array of experiences from Research and Development at AT&amp;T, to Salesforce development at a Consultancy, to data engineering at a BioTech startup, and now working for the infamous mouse.
+          I had brief exposure to HTML/CSS and even a little bit of Python via Codeacadamy and Tumblr (RIP), so I had somewhat of a technical footing, a majority of my school work was more focused on problem-solving, and understanding the concepts and abstractions of software that would help me in the future.
+          After graduating I didn't waste any time diving into the industry and accrued a wide array of experiences from Research and Development at AT&amp;T,
+          to Salesforce development at a consultancy, to back-end web development and data engineering at a BioTech startup, and now working for the infamous mouse.
         </p>
       </div>
     </div>
@@ -113,7 +114,7 @@
             <h1>Front-end Development</h1>
             <div class="generic-container">
               <p>
-                I don't always work on the front-end, but when I do it's mostly for personal projects.
+                I don't always work on the front-end, but when I do, it's mostly for personal projects.
                 I've made it a point to at least understand the concepts of each javascript framework and properly assess if it's necessary.
                 My front-end projects range from data visualization to group chat applications to personal websites (what you're looking at). 
                 I wouldn't call myself a designer by any means, however I do understand the importance of what information to show as well as where it should be.
