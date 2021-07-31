@@ -28,7 +28,7 @@
         </p>
         <p>
           I had brief exposure to HTML/CSS and even a little bit of Python via Codeacadamy and Tumblr, so I had somewhat of a technical footing, a majority of my schoolwork was more focused on problem-solving and understanding the concepts and nuances of software in general. 
-          After graduating I didn't waste any time diving into the industry and accrewed a wide array of experiences from Research and Development at AT&amp;T, to Salesforce development at a Consultancy, to data engineering at a BioTech startup, and now working for the infamous mouse.
+          After graduating I didn't waste any time diving into the industry and accrued a wide array of experiences from Research and Development at AT&amp;T, to Salesforce development at a Consultancy, to data engineering at a BioTech startup, and now working for the infamous mouse.
         </p>
       </div>
     </div>
