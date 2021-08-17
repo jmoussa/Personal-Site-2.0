@@ -56,7 +56,7 @@
                 My YouTube Recomendation API (paired with it's own 'crawler') was designed to return popular content, then start to recommend content based on tags, likes/dislikes, etc.
                 The Chat App API was a basic user authentication API with a WebSocket layer to manage the group chats as well as a Twilio integration for video chat capabilities.
                 My most recent project is a stock tracer that is essentially a Robinhood clone (in that it grabs from the Robinhood API), but the application will also provide additional 
-                metrics and graphs to visualize the user's transations more granularly.
+                metrics and graphs to visualize the user's transactions more granularly.
               </p>
             </div>
             <div class="right"> 
