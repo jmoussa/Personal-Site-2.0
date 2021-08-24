@@ -1,144 +1,97 @@
 <template>
   <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/projects">Projects</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <div id="particle-container">
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
+		<!--	
+		<div class="route" @click="scrollTo('home-screen')">
+			<p>Home</p>
+		</div>
+		-->
+		<div class="route" @click="scrollTo('about-me')">
+			<p>About Me</p> 
+		</div> 
+		<div class="route" @click="scrollTo('experience')">
+			<p>Experience</p>	
+		</div>
+		<div class="route" @click="scrollTo('skills')">
+			<p>Skills</p>	
+		</div>
+		<div class="route" @click="scrollTo('projects')">
+			<p>Projects</p>	
+		</div>
+		<div class="route" @click="scrollTo('contact')">
+			<p>Contact</p>	
+		</div>
+	</div>
+  <div>
     <router-view />
   </div>
 </template>
-
+<script>
+export default {
+	name: "Home",
+	methods: {
+		scrollTo: function(id) {  
+      document.getElementById(id).scrollIntoView({
+        behavior: "smooth"
+      });
+		}
+	}
+}
+</script>
 <style lang="scss">
-p, a, li, ul {
-  font-size: clamp(1rem, -0.875rem + 8.333vw, 1.2rem);
-}
-h1  {
-  font-size: clamp(1rem, -0.875rem + 8.333vw, 3rem);
-}
-h2 {
-  font-size: clamp(1rem, -0.875rem + 8.333vw, 2rem);
-}
-h3 {
-  font-size: clamp(1rem, -0.875rem + 8.333vw, 1.5rem);
-}
+div, span, * {
+	@import url('https://fonts.googleapis.com/css2?Montserrat:wght@100&family=Lato:wght@100&display=swap');	
+	// h6 starts at $base-font-size 
+	// headings grow from h6 to h1 by $heading-scale
+	$base-font-size: 16px;
+	$heading-scale: 2; // amount of px headings grow from h6 to h1
 
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
-  
-  .generic-container{
-    margin: .5rem; 
-    padding: 0;
-  }
-  
-  #contact {
-    .flex-center {
-      flex-direction: column;
-    }
-  }
-  
-  #card-body {
-    padding: 1rem; 
-  }
+	@for $i from 1 through 8 {
+		@if $i < 7 {
+			h#{$i} {
+				@if $i % 2 == 0 {
+					font-family: 'Lato', sans-serif;
+				}@else{
+					font-family: 'Montserrat', sans-serif;
+				}
+				font-size: $base-font-size + $heading-scale * (8 - $i);
+				margin: 0px;
+				margin-block-start: 0px;
+				margin-block-end: 1rem;
+				margin-bottom: 30px;
+				font-weight: lighter;
+			}
+		}@else if $i == 7{
+			span {
+				font-family: 'Montserrat', sans-serif;
+				font-size: $base-font-size + $heading-scale * (8 - $i);
+				margin-block-start: 0;
+				margin-block-end: 1rem;
+				vertical-align: baseline;
+				font-weight: normal;
+			}
+		}@else if $i == 8{
+			p {
+				line-height: 22px;
+				font-family: 'Lato', sans-serif;
+				font-size: $base-font-size + $heading-scale * (8 - $i);
+				margin-block-start: 0;
+				margin-block-end: 1rem;
+				margin-bottom: 30px;
+				vertical-align: baseline;
+				font-weight: lighter;
+			}
+		}
+	}
 
-  #blurb, #brief {
-    z-index: 20; 
-    margin: auto;
-    padding: 0.5rem;
-    background-color: #F8F4F9;
-  }
-
-  #grid-container-resize {
-      grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
-  }
-
-  p, a, li, ul, #nav {
-    font-size: 1rem;
-  }
-  h1  {
-    font-size: 2.3rem;
-  }
-  h2 {
-    font-size: 1.7rem;
-  }
-  h3 {
-    font-size: 1.1rem;
-  }  
-}
-
-
-html {
-  background-color: #F8F4F9;
 }
 body {
-  margin: 0;
-  padding: 0;
-  overflow: auto;
+	margin: 0;
+	padding: 0;
+	overflow: auto;
+	width: 100vw;
 }
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -146,49 +99,40 @@ body {
 }
 
 #nav {
-  z-index: 20;
-  padding: 2vw;
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0; 
-  background: #F8F4F9;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-#nav a:hover {
-  font-weight: 800;
-  color: #42b983;
-}
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-
-.particle {
-	position: absolute;
-  border-radius: 50%;
-  z-index: -1;
-}
-
-@for $i from 1 through 30 {
-	@keyframes particle-animation-#{$i} {
-		100% {
-			transform: translate3d((random(90) * 1vw), (random(90) * 1vh), (random(100) * 1px));
+	z-index: 20;
+	margin-top: 100px;
+	margin-left: 100px;
+	border-radius: 2rem;
+  padding: 1.3rem;
+	position: fixed;
+	background: #30343F;
+	filter: drop-shadow(3px 3px 3px #000);
+	color: white;
+	float: left;	
+	.route {
+		p {
+			font-family: 'Montserrat', sans-serif;
+			margin: 0px;
+			font-weight: 600;
 		}
+		font-size: 18px;
+		margin: auto;
+		cursor: pointer;	
+		padding: 1.1rem 0.5rem;
+		font-weight: 600;
+		color: white;
+		text-decoration: none;
 	}
-	
-	.particle:nth-child(#{$i}){
-		animation: particle-animation-#{$i} 60s infinite;
-		$size: random(5) + 5 + px;
-		opacity: random(200)/100;
-		height: $size;
-		width: $size;
-		animation-delay: -$i * .2s;
-		transform: translate3d((random(90) * 1vw), (random(90) * 1vh), (random(100) * 2px));
-		background: #42b983;
+	.route:hover {
+		color: #EA638C;
+	}
+}
 
-	}
+#nav a:hover {
+  color: #EA638C;
+}
+
+#nav a.router-link-exact-active {
+  color: #EA638C;
 }
 </style>
