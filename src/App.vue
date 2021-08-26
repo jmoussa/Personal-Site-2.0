@@ -118,7 +118,7 @@ html {
 		font-weight: bold;
 	}
 	#nav {
-		transform: translate(-90px, 0) scale(1.01);
+		transform: translate(-65px, 0) scale(1.01);
 	}
 }
 
@@ -128,7 +128,7 @@ html {
 	border-radius: 2rem;
   padding: 1rem;
 	position: fixed;
-	left: 80px;
+	left: 50px;
 	top: 100px;
 	background: #30343F;
 	filter: drop-shadow(3px 3px 3px #000);

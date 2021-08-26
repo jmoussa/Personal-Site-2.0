@@ -385,7 +385,7 @@ a:hover span {
 	}
 }
 .description {
-	margin-left: 4rem;
+	margin: auto;
 	text-align: justify;
 	margin-top: 1rem;
 }
@@ -393,8 +393,6 @@ a:hover span {
 .row-flow {
 	display: flex;
 	align-content: space-between;	
-	padding-left: 4rem;
-	padding-right: 4rem;
 	.about-me {
 		text-align: justify;
 		width: 33%;
@@ -433,8 +431,7 @@ a:hover span {
 }
 .subtitle {
 	text-align: left;
-	margin: 0;
-	display: inline-block;
+	margin: auto;
 	padding-bottom: 0.5rem;
 	border-bottom: 1px solid #FFFFFF;
 	border-bottom-color: rgba(255,255,255,0.35);
@@ -444,7 +441,6 @@ img {
 }
 .card-view {
 	padding: 2rem 0;
-	padding-left: 4rem;
 	overflow: auto;
 	width: 100%;
 }
