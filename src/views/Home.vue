@@ -446,6 +446,7 @@ img {
 .card-view {
 	padding: 2rem 4rem;
 	overflow: auto;
+	width: 100%;
 }
 .up-link {
 	background: none;
