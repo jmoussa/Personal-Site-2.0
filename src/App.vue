@@ -104,7 +104,7 @@ html {
 	width: 100%;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
 	html {
 		margin: 0;
 		min-width: 1200px; 
@@ -118,8 +118,7 @@ html {
 		font-weight: bold;
 	}
 	#nav {
-		transform: translate(-100px, 0) scale(1.01);
-		
+		transform: translate(-90px, 0) scale(1.01);
 	}
 }
 
@@ -159,7 +158,8 @@ html {
 	}
 	.route:hover {
 		color: #EA638C;
-		transform: scale(1.1);
+		transform: scale(1.07);
+		font-weight: bold;
 	}
 }
 

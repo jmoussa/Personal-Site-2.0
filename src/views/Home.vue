@@ -444,7 +444,8 @@ img {
   width: 14vw;
 }
 .card-view {
-	padding: 2rem 4rem;
+	padding: 2rem 0;
+	padding-left: 4rem;
 	overflow: auto;
 	width: 100%;
 }
