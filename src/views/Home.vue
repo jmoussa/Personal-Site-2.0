@@ -20,7 +20,7 @@
 							When I'm not working, I can usually be found doing one of a few things; cooking/ordering-in, reading, cleaning, working out, going for a walk outside, or working on personal software projects. For the most part, I like to keep busy and continue learning. 	
 						</p>
 						<p>	I played a variety of instruments (mainly saxophone and drums).
-							I was part of the Rutgers University Marching Band from 2013-2016 and played snare drum for United Percussion's  2017 <a class="up-link" href="https://www.youtube.com/watch?v=D88XIqUbh5A" rel="noopener noreferrer" target="_blank">production</a> (indoor drumline).
+							I was part of the Rutgers University Marching Band from 2013-2016 and played snare drum for United Percussion's  2017 <a class="up-link" href="https://www.youtube.com/watch?v=D88XIqUbh5A" rel="noopener noreferrer" target="_blank">production</a> (indoor percussion ensemble).
 						</p>
 					</div>		
 				</div>
