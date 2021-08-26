@@ -33,7 +33,7 @@ export default {
 <style lang="scss">
 $h: 20vh;
 .card-container {
-	padding: 1rem 0;
+	padding: 1.3rem 0;
 	/*height: $h;*/
 	display: flex;
 	margin: auto;
@@ -45,18 +45,17 @@ $h: 20vh;
 .left-card {
 	width: 35%;
 	float: left;
-	/*border-right: 1.5px solid rgba(255,255,255,0.35);*/
 	.left_content_paragraph {
 		width: 100%;
 		float: left;
-		text-align: left;
+		text-align: justify;
 	}
 	.left_content_header {
 		h4 {
 			margin-block-end: 1rem;
 		}
 		float: left;
-		text-align: left;
+		text-align: justify;
 	}
 }
 
@@ -66,14 +65,14 @@ $h: 20vh;
 	padding-left: 2rem;
 	float: right;
 	.right-content {
-		text-align: left;
+		text-align: justify;
 		.right_content_paragraph {
 			float: left;
-			text-align: left;
+			text-align: justify;
 		}
 		.right_content_header {
 			float: left;
-			text-align: left;
+			text-align: justify;
 		}
 	}
 }

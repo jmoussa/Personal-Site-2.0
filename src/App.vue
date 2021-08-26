@@ -64,6 +64,7 @@ div, span, * {
 				font-size: $base-font-size + $heading-scale * (8 - $i);
 				margin-block-start: 0;
 				margin-block-end: 1rem;
+				margin-bottom: 1rem;
 				vertical-align: baseline;
 				font-weight: normal;
 			}
@@ -74,7 +75,7 @@ div, span, * {
 				font-size: $base-font-size + $heading-scale * (8 - $i);
 				margin-block-start: 0;
 				margin-block-end: 1rem;
-				margin-bottom: 10px;
+				margin-bottom: 1rem;
 				vertical-align: baseline;
 				font-weight: lighter;
 			}
@@ -112,6 +113,14 @@ html {
 		width: 100%;
 		overflow-x: auto; 
 	}
+	.route{
+		padding-left: 2rem;	
+		font-weight: bold;
+	}
+	#nav {
+		transform: translate(-100px, 0) scale(1.01);
+		
+	}
 }
 
 #nav {
@@ -120,7 +129,7 @@ html {
 	border-radius: 2rem;
   padding: 1rem;
 	position: fixed;
-	left: 25px;
+	left: 80px;
 	top: 100px;
 	background: #30343F;
 	filter: drop-shadow(3px 3px 3px #000);
@@ -134,9 +143,7 @@ html {
 	
 	.route {
 		p {
-			font-family: 'Montserrat', sans-serif;
-			margin: 0px;
-			font-weight: 600;
+			font-weight: normal;
 		}
 		font-size: 18px;
 		margin: auto;
@@ -145,10 +152,14 @@ html {
 		font-weight: 600;
 		color: white;
 		text-decoration: none;
+		-moz-transition: all .2s ease-in;
+		-o-transition: all .2s ease-in;
+		-webkit-transition: all .2s ease-in;
+		transition: all .2s ease-in;
 	}
 	.route:hover {
 		color: #EA638C;
-		display: default;
+		transform: scale(1.1);
 	}
 }
 

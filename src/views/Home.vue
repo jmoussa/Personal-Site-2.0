@@ -387,7 +387,8 @@ a:hover span {
 }
 .description {
 	margin-left: 4rem;
-	text-align: left;
+	text-align: justify;
+	margin-top: 1rem;
 }
 
 .row-flow {
