@@ -31,17 +31,19 @@ export default {
 };
 </script>
 <style lang="scss">
-$h: 140px;
+$h: 20vh;
 .card-container {
-	padding: 2rem 0;
-	height: $h;
+	padding: 1rem 0;
+	/*height: $h;*/
+	display: flex;
+	margin: auto;
+	overflow: auto;
 }
 .italic {
 	font-style: italic;
 }	
 .left-card {
 	width: 35%;
-	height: 100%;
 	float: left;
 	/*border-right: 1.5px solid rgba(255,255,255,0.35);*/
 	.left_content_paragraph {
@@ -63,7 +65,6 @@ $h: 140px;
 	width:60%;
 	padding-left: 2rem;
 	float: right;
-	height: $h;
 	.right-content {
 		text-align: left;
 		.right_content_paragraph {

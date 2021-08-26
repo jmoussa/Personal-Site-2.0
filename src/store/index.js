@@ -26,7 +26,7 @@ export default createStore({
               final_repos.push(r);
             }
           }
-          console.log(final_repos[0]);
+          console.log(final_repos[0])
           commit("setGithubProjects", final_repos);
         } else {
           console.err(err);

@@ -1,10 +1,8 @@
 <template>
   <div id="nav">
-		<!--	
-		<div class="route" @click="scrollTo('home-screen')">
-			<p>Home</p>
+		<div class="route" id="home-route" @click="scrollTo('home-screen')">
+			<p>Title</p>
 		</div>
-		-->
 		<div class="route" @click="scrollTo('about-me')">
 			<p>About Me</p> 
 		</div> 
@@ -30,9 +28,9 @@ export default {
 	name: "Home",
 	methods: {
 		scrollTo: function(id) {  
-      document.getElementById(id).scrollIntoView({
-        behavior: "smooth"
-      });
+			document.getElementById(id).scrollIntoView({
+				behavior: "smooth"
+			});
 		}
 	}
 }
@@ -76,7 +74,7 @@ div, span, * {
 				font-size: $base-font-size + $heading-scale * (8 - $i);
 				margin-block-start: 0;
 				margin-block-end: 1rem;
-				margin-bottom: 30px;
+				margin-bottom: 10px;
 				vertical-align: baseline;
 				font-weight: lighter;
 			}
@@ -87,28 +85,66 @@ div, span, * {
 body {
 	margin: 0;
 	padding: 0;
-	overflow: auto;
-	width: 100vw;
 }
-
+html {
+	margin: 0;
+	min-width: 1200px; 
+	padding: 0;
+	width: 100%;
+	overflow-x: hidden; 
+}
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+
+@media (max-width: 1100px) {
+	html {
+		margin: 0;
+		min-width: 1200px; 
+		padding: 0;
+		height: 100%;	
+		width: 100%;
+		overflow-x: auto; 
+	}
+	#nav {
+		top: 0;
+		left: 0;
+		padding: 0;
+		display: flex;
+		position: sticky;	
+		.route {
+			p {
+				padding: 0;
+			}
+			padding: 0;
+		}
+	}
 }
 
 #nav {
 	z-index: 20;
-	margin-top: 100px;
-	margin-left: 100px;
+	margin: 0;
 	border-radius: 2rem;
-  padding: 1.3rem;
+  padding: 1rem;
 	position: fixed;
+	left: 25px;
+	top: 100px;
 	background: #30343F;
 	filter: drop-shadow(3px 3px 3px #000);
 	color: white;
 	float: left;	
+	
+	-moz-transition: all .2s ease-in;
+	-o-transition: all .2s ease-in;
+	-webkit-transition: all .2s ease-in;
+	transition: all .2s ease-in;
+	
 	.route {
 		p {
 			font-family: 'Montserrat', sans-serif;
@@ -118,13 +154,14 @@ body {
 		font-size: 18px;
 		margin: auto;
 		cursor: pointer;	
-		padding: 1.1rem 0.5rem;
+		padding: 0.7rem 0.5rem;
 		font-weight: 600;
 		color: white;
 		text-decoration: none;
 	}
 	.route:hover {
 		color: #EA638C;
+		display: default;
 	}
 }
 
