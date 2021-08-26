@@ -112,19 +112,6 @@ html {
 		width: 100%;
 		overflow-x: auto; 
 	}
-	#nav {
-		top: 0;
-		left: 0;
-		padding: 0;
-		display: flex;
-		position: sticky;	
-		.route {
-			p {
-				padding: 0;
-			}
-			padding: 0;
-		}
-	}
 }
 
 #nav {
