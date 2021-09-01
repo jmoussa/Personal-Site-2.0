@@ -32,12 +32,12 @@
 					<label>Vue.js</label>
 				</div>
 				<div class="bar">
-					<div class="intermediate alt"></div>
+					<div class="intermediate alt"><div><img src="../assets/dots.jpeg"></div></div>
 					<div class="graph-header"></div>
 					<label>React</label>
 				</div>
 				<div class="bar">
-					<div class="intermediate alt"><div><img src="../assets/dots.jpeg"></div></div>
+					<div class="intermediate"></div>
 					<div class="graph-header dark"></div>
 					<label>SASS</label>
 				</div>
@@ -131,7 +131,7 @@ export default {
 <style lang="scss">
 .resume-skills--desktop {
 	display: flex;
-	margin: 6rem 2rem;
+	margin: 7rem 0;
 }
 .resume-skills {
 	margin-top: -5px;

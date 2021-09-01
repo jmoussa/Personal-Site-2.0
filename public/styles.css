@@ -433,8 +433,8 @@
 }
 
 figure {
-  margin: 0px auto;
-  margin-left: 20px;
+  width: 100%;
+  margin: 0;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -479,11 +479,11 @@ figure .bar .graph-header {
   right: 0px;
 }
 figure > div {
-  margin-top: 25px;
+  margin-top: 24px;
   font-size: 12px;
+  padding: 0 5px;
   position: relative;
   width: 30%;
-  padding-right: 25px;
 }
 @media (max-width: 767px) {
   figure > div {
