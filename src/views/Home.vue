@@ -130,7 +130,7 @@
 		<div class="description">
 			<p>
 				Below I've included the best links to reach me, as well as a link to my standard resume.
-				If you're contacting about opportunities, I encourage you to use the email in my resume, or if just want to grab a coffee, don't hesitate to reach out 😊
+				If you are contacting about opportunities, I encourage you to use the email in my resume, or if you just want to grab a coffee and bounce ideas around, feel free to reach out 😊
 			</p>
 		</div>
 		<div class="flex-social">
