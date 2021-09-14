@@ -22,7 +22,7 @@
 					<label>CSS</label>
 				</div>
 				<div class="bar">
-					<div class="advanced alt"><div><img src="../assets/dots.jpeg"></div></div>
+					<div class="advanced alt"><div><img alt="dots" src="../assets/dots.jpeg"></div></div>
 					<div class="graph-header"></div>
 					<label>JavaScript</label>
 				</div>
@@ -32,7 +32,7 @@
 					<label>Vue.js</label>
 				</div>
 				<div class="bar">
-					<div class="intermediate alt"><div><img src="../assets/dots.jpeg"></div></div>
+					<div class="intermediate alt"><div><img alt="dots" src="../assets/dots.jpeg"></div></div>
 					<div class="graph-header"></div>
 					<label>React</label>
 				</div>
@@ -47,7 +47,7 @@
 					Back-end	
 				</p>
 				<div class="bar">
-					<div class="intermediate alt"><div><img src="../assets/dots.jpeg"></div></div>
+					<div class="intermediate alt"><div><img alt="dots" src="../assets/dots.jpeg"></div></div>
 					<div class="graph-header"></div>
 					<label>MongoDB</label>
 				</div>
@@ -57,7 +57,7 @@
 					<label>MySQL</label>
 				</div>
 				<div class="bar">
-					<div class="expert alt"><div><img src="../assets/dots.jpeg"></div></div>
+					<div class="expert alt"><div><img alt="dots" src="../assets/dots.jpeg"></div></div>
 					<div class="graph-header"></div>
 					<label>Python</label>
 				</div>
@@ -67,7 +67,7 @@
 					<label>Go</label>
 				</div>
 				<div class="bar">
-					<div class="expert alt"><div><img src="../assets/dots.jpeg"></div></div>
+					<div class="expert alt"><div><img alt="dots" src="../assets/dots.jpeg"></div></div>
 					<div class="graph-header"></div>
 					<label>PostgreSQL</label>
 				</div>
@@ -77,7 +77,7 @@
 					Architecture	
 				</p>
 				<div class="bar">
-					<div class="expert alt"><div><img src="../assets/dots.jpeg"></div></div>
+					<div class="expert alt"><div><img alt="dots" src="../assets/dots.jpeg"></div></div>
 					<div class="graph-header"></div>
 					<label>RESTful APIs</label>
 				</div>
@@ -87,7 +87,7 @@
 					<label>Docker</label>
 				</div>
 				<div class="bar">
-					<div class="advanced alt"><div><img src="../assets/dots.jpeg"></div></div>
+					<div class="advanced alt"><div><img alt="dots" src="../assets/dots.jpeg"></div></div>
 					<div class="graph-header dark"></div>
 					<label>CI/CD</label>
 				</div>
@@ -97,7 +97,7 @@
 					<label>Databases</label>
 				</div>
 				<div class="bar">
-					<div class="advanced alt"><div><img src="../assets/dots.jpeg"></div></div>
+					<div class="advanced alt"><div><img alt="dots" src="../assets/dots.jpeg"></div></div>
 					<div class="graph-header dark"></div>
 					<label>Data Pipelines</label>
 				</div>
@@ -107,7 +107,7 @@
 					Management
 				</p>
 				<div class="bar">
-					<div class="advanced alt"><div><img src="../assets/dots.jpeg"></div></div>
+					<div class="advanced alt"><div><img alt="dots" src="../assets/dots.jpeg"></div></div>
 					<div class="graph-header"></div>
 					<label>Project Management</label>
 				</div>
