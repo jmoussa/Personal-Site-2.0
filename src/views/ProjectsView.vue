@@ -3,7 +3,7 @@
 		<div class="column-layout">
 			<div class="grid-container" id="grid-container-resize">
 				<div v-for="(item, index) in github_projects_top" :key="index" class="card-item">
-					<div class="card-header"><h3>{{ item.name.replaceAll('-', ' ')[0].toUpperCase() + item.name.replaceAll('-', ' ').slice(1) }}</h3></div>
+					<div class="card-header"><h3>{{ item.name.replaceAll('-', ' ').replace(/(^\w{1})|(\s+\w{1})/g, letter => letter.toUpperCase()) }}</h3></div>
 					<div class="card-body" id="card-body"><p>{{item.description}}</p></div>
 					<div class="card-link-group">
 						<div class="github-button">
@@ -15,7 +15,7 @@
 
 			<div class="grid-container" id="grid-container-resize">
 				<div v-for="(item, index) in github_projects_bottom" :key="index" class="card-item">
-					<div class="card-header"><h3>{{ item.name.replaceAll('-', ' ')[0].toUpperCase() + item.name.replaceAll('-', ' ').slice(1) }}</h3></div>
+					<div class="card-header"><h3>{{ item.name.replaceAll('-', ' ').replace(/(^\w{1})|(\s+\w{1})/g, letter => letter.toUpperCase()) }}</h3></div>
 					<div class="card-body" id="card-body"><p>{{item.description}}</p></div>
 					<div class="card-link-group">
 						<div class="github-button">
