@@ -107,7 +107,7 @@
 					Management
 				</p>
 				<div class="bar">
-					<div class="advanced alt"><div><img alt="dots" src="../assets/dots.jpeg"></div></div>
+					<div class="intermediate alt"><div><img alt="dots" src="../assets/dots.jpeg"></div></div>
 					<div class="graph-header"></div>
 					<label>Project Management</label>
 				</div>
