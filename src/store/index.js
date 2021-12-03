@@ -22,11 +22,11 @@ export default createStore({
           let final_repos = [];
           for (let idx in repos) {
             let r = repos[idx];
-            if (!r.archived) {
+            if (!r.archived && r.name != "jmoussa") {
               final_repos.push(r);
             }
           }
-          console.log(final_repos[0])
+          console.log(final_repos[0]);
           commit("setGithubProjects", final_repos);
         } else {
           console.err(err);
