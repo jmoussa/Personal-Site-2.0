@@ -48,9 +48,9 @@
 					Much of my focus resides in the backend; creating APIs, and implementing various system architectures and data pipelines. 
 					Most of this work is done with Python, I am also picking up Go as a backup compiled language and because it's simplicity appeals to me.
 					I will also work on the front-end, and from time to time, actually enjoy it. 
-					I started out using React, but my focus lately has been to leverage Vue.js' more simplified platform.
-					I'm able to work alone or with a team,
-					although I find working in teams is often a more efficient way to grow, and to arrive at better solutions.
+					I started out using React, but my focus lately has been to leverage Vue.js' more simplicity, however my latest tool of choice for rapid prototyping has been Svelte.
+					I'm comfortable working alone or with a team,
+					although I find working in teams is often a more efficient way to both learn, and arrive at better solutions.
 				</p>
 			</div>
 		</div>

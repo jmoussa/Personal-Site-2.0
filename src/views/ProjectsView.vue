@@ -3,7 +3,7 @@
 		<div class="column-layout">
 			<div class="grid-container" id="grid-container-resize">
 				<div v-for="(item, index) in github_projects_top" :key="index" class="card-item">
-					<div class="card-header"><h3>{{ item.name.replaceAll('-', ' ').replace(/(^\w{1})|(\s+\w{1})/g, letter => letter.toUpperCase()) }}</h3></div>
+					<div class="card-header"><h3>{{ item.name.replaceAll('-', ' ').replace(/(^\w{1})|(\s+\w{1})/g, letter => letter.toUpperCase()).replace('Nft', 'NFT').replace('Be', 'Back-end').replace('Fe', 'Front-end').replace('Api', 'API').replace('Cli', 'CLI') }}</h3></div>
 					<div class="card-body" id="card-body"><p>{{item.description}}</p></div>
 					<div class="card-link-group">
 						<div class="github-button">
@@ -15,7 +15,7 @@
 
 			<div class="grid-container" id="grid-container-resize">
 				<div v-for="(item, index) in github_projects_bottom" :key="index" class="card-item">
-					<div class="card-header"><h3>{{ item.name.replaceAll('-', ' ').replace(/(^\w{1})|(\s+\w{1})/g, letter => letter.toUpperCase()) }}</h3></div>
+					<div class="card-header"><h3>{{ item.name.replaceAll('-', ' ').replace(/(^\w{1})|(\s+\w{1})/g, letter => letter.toUpperCase()).replace('Nft', 'NFT').replace('Be', 'Back-end').replace('Fe', 'Front-end').replace('Api', 'API').replace('Cli', 'CLI') }}</h3></div>
 					<div class="card-body" id="card-body"><p>{{item.description}}</p></div>
 					<div class="card-link-group">
 						<div class="github-button">
@@ -147,7 +147,8 @@ export default {
 }
 .card-item {
 	background-color: #30343F; 
-	border: 1px solid #FFFFFF;
+	border: 3px solid #FFFFFF;
+	border-radius: 2rem;
 	margin: 1rem;
 	padding: 2rem 1rem;
 	text-align: center;
