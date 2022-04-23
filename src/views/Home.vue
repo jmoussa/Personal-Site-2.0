@@ -364,9 +364,6 @@ a:hover span {
 	width: 800px;
 	
 }
-.header {
-	padding-bottom: 2rem; 
-}
 #about-me{
 	min-height: 80vh;
 }
