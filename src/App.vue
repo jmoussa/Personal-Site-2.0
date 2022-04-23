@@ -126,9 +126,9 @@ html {
 	z-index: 20;
 	margin: 0;
 	border-radius: 2rem;
-  padding: 1rem;
+    padding: 1rem;
 	position: fixed;
-	left: 50px;
+	left: 40px;
 	top: 100px;
 	background: #30343F;
 	filter: drop-shadow(3px 3px 3px #000);
