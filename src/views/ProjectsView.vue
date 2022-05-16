@@ -11,9 +11,9 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			<!-- </div>
 
-			<div class="grid-container" id="grid-container-resize">
+			<div class="grid-container" id="grid-container-resize"> -->
 				<div v-for="(item, index) in github_projects_bottom" :key="index" class="card-item">
 					<div class="card-header"><h3>{{ item.name.replaceAll('-', ' ').replace(/(^\w{1})|(\s+\w{1})/g, letter => letter.toUpperCase()).replace('Nft', 'NFT').replace('Be', 'Back-end').replace('Fe', 'Front-end').replace('Api', 'API').replace('Http', 'HTTP') }}</h3></div>
 					<div class="card-body" id="card-body"><p>{{item.description}}</p></div>
@@ -144,6 +144,7 @@ export default {
 	-ms-overflow-style: -ms-autohiding-scrollbar;
 	margin: 0;
 	padding: 0;
+	height: 70vh;
 }
 .card-item {
 	background-color: #30343F; 
@@ -190,7 +191,7 @@ export default {
 }
 .column-layout {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	align-content: center;
 }
 </style>

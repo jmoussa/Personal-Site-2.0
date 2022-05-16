@@ -128,7 +128,7 @@ export default {
 
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 .resume-skills--desktop {
 	display: flex;
 	margin: 7rem 0;

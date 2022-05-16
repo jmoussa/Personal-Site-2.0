@@ -18,6 +18,11 @@
 		<div class="route" @click="scrollTo('contact')">
 			<p>Contact</p>	
 		</div>
+        <!-- 
+        <div class="route" @click="scrollTo('blog')">
+			<p>Blog</p>	
+        </div>
+        -->
 	</div>
   <div>
     <router-view />
@@ -89,7 +94,7 @@ body {
 }
 html {
 	margin: 0;
-	min-width: 1200px; 
+	// min-width: 1200px; 
 	padding: 0;
 	width: 100%;
 	overflow-x: hidden; 

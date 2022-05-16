@@ -1,11 +1,11 @@
 <template>
-	<div class="page-section-dark" id="home-screen">
+	<div class="page-section page-section-dark" id="home-screen">
 		<div class="title">
 		  <h2 id="name">Joseph Moussa</h2>    
 		  <h3 id="profession">I Build Software</h3>
 		</div>
 	</div>
-	<div class="page-section-light" id="about-me">
+	<div class="page-section page-section-light" id="about-me">
 		<div class="header">
 		  <h1 class="title-text">Software Engineer</h1>
 		</div>
@@ -55,7 +55,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="page-section-dark experiences" id="experience">
+	<div class="page-section page-section-dark experiences" id="experience">
 		<div>
 			<h1 class="title-text">Job History & Education</h1>
 		</div>
@@ -100,7 +100,7 @@
 			></Card>
 		</div>
 	</div>
-	<div class="page-section-light" id="skills">
+	<div class="page-section page-section-light" id="skills">
 		<div>
 			<h1 class="title-text">Skills</h1>
 			<SkillsView></SkillsView>
@@ -121,13 +121,13 @@
 			</div>
 		</div>
 	</div>
-	<div class="page-section-dark" id="projects">
+	<div class="page-section page-section-dark" id="projects">
 		<div>
 			<h1 class="title-text">Projects</h1>
 			<ProjectsView/>
 		</div>
 	</div>
-	<div class="page-section-light" id="contact">
+	<div class="page-section page-section-light" id="contact">
 		<h1 class="title-text">Contact</h1>
 		<div class="description">
 			<p>
@@ -162,7 +162,15 @@
 			</div>
 			
 		</div>
-	</div>
+    </div>
+    <!--
+	<div class="page-section page-section-dark" id="blog">
+		<div>
+			<h1 class="title-text">Blog</h1>
+			<iframe src="https://v1.embednotion.com/embed/b5aa0d4d606e4bb8be3a634b2d839f55"></iframe>
+		</div>
+    </div>
+    -->
 </template>
 
 <script>
@@ -193,7 +201,17 @@ export default {
 };
 </script>
 
+
 <style scoped lang="scss">
+ 
+iframe { 
+	width: 100%;
+	height: 1000px; 
+	border: 2px solid #000; 
+	border-radius: 10px; 
+	padding:0; 
+	margin: 0;
+} 
 #home-screen {
 	height: 100vh;
 }
@@ -367,9 +385,35 @@ a:hover span {
 #about-me{
 	min-height: 80vh;
 }
-.page-section-light {
+.page-section {
 	padding: 10vh 15vw;
-	margin: 0;	
+	margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="page-section-"] {
+	width: 100%;
+	div {
+		display:flex;
+		flex-direction: column;
+		padding: 2%;
+		margin: auto;
+		overflow-x: scroll;
+		.card-view{
+			.card-container {
+				div {
+					width: 100%;
+				}
+			}	
+		}
+		text-align: center;
+		align-items: center;
+	}
+  }
+}
+
+.page-section-light {
 	background: #F7F7F9;
 	.title-text {
 		border-bottom: 1px solid #000;
@@ -377,8 +421,8 @@ a:hover span {
 	}
 }
 .page-section-dark {
-	padding: 10vh 15vw;
-	margin: 0;	
+	// padding: 10vh 15vw;
+	// margin: 0;	
 	background-color: #30343F;
 	color: white;
 }

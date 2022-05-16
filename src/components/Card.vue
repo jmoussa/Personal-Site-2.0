@@ -34,7 +34,7 @@ export default {
 $h: 20vh;
 .card-container {
 	padding: 1.3rem 0;
-	/*height: $h;*/
+	// height: $h;
 	display: flex;
 	margin: auto;
 	overflow: auto;
