@@ -22,6 +22,3 @@ jobs:
     - name: Run Production Build
       run: npm install && npm run build --prod
 
-    - name: Deploy static site to S3 bucket
-      run: aws s3 sync ./dist/ s3://joseph-moussa.com/ --delete
-
